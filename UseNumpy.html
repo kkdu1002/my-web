@@ -25,16 +25,18 @@ axis = 1 : 행<br>
 axis = -1 : 층<br>
 axis 0,1은 2차원이상에서 사용하며, -1은 3차원이상에서 사용함
 </p>
+행 : 가로 , 열 : 세로
 <p><strong><p style="fort-size:20px">배열 생성</strong><br>
-np.Array([원소값,원소값]) > 1차원배열<br>
-np.Array([[원소값,원소값]],(원소값,원소값),[......]) > 2차원배열<br>
+변수명.Array([원소값,원소값]) > 1차원배열<br>
+변수명.Array([[원소값,원소값]],(원소값,원소값),[......]) > 2차원배열<br>
 [...]추가 할수록 x차원배열이 됨<br>
-np.arange(갯수)<br>
-np.arange(시작,불포함 끝) , np.arange(시작,불포함끝,증감)<br>
-np.arange(시작,불포함 끝,dtype = data-type)<br>
-np.reshape(층수,행수,열수)<br>
-np.linespace(시작,포함 끝,갯수)<br>
-np.zeros((행수,열수))<br>
+변수명.ndim > 몇차원인지 알아내기<br>
+변수명.arange(갯수)<br>
+변수명.arange(시작,불포함 끝) , np.arange(시작,불포함끝,증감)<br>
+변수명.arange(시작,불포함 끝,dtype = data-type)<br>
+변수명.reshape(층수,행수,열수)<br>
+변수명.linespace(시작,포함 끝,갯수)<br>
+변수명.zeros((행수,열수))<br>
 </p>
 <p><strong><p style="fort-size:20px">배열 항목 지정 방법</strong>
 <li>1차원 : 배열명[위치]</li>
