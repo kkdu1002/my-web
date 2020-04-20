@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <title>Program language</title>
+  <meta charset="utf-8">
+</head>
+<body>
+      <h1><a href="programming.html">프로그래밍 언어</a></h1>
+  <ul>
+    <li><a href="HTML.html">HTML1</a></li>
+    <li><a href="python.html">python</a></li>
+    <li><a href="learnlanguage.html">배울때 사용</a></li>
+    <li><a href="imagevideo.html">영상처리</a></li>
+    <li><a href="Numpy.html">numpy</a></li>
+  </ul>
+  <strong><p style="font-size:30px"</p>numpy</strong>
+<p>
+<ol>
+<li>다차원의 배열 사용가능</li>
+<li>"ndarray"class사용</li>
+<li>2차원 이상에서 axis사용</li>
+</ol>
+axis = 0 : 열<br>
+axis = 1 : 행<br>
+axis = -1 : 층<br>
+axis 0,1은 2차원이상에서 사용하며, -1은 3차원이상에서 사용함
+</p>
+<p><strong><p style="fort-size:20px">배열 생성</strong><br>
+np.Array([원소값,원소값]) > 1차원배열<br>
+np.Array([[원소값,원소값]],(원소값,원소값),[......]) > 2차원배열<br>
+[...]추가 할수록 x차원배열이 됨<br>
+np.arange(갯수)<br>
+np.arange(시작,불포함 끝) , np.arange(시작,불포함끝,증감)<br>
+np.arange(시작,불포함 끝,dtype = data-type)<br>
+np.reshape(층수,행수,열수)<br>
+np.linespace(시작,포함 끝,갯수)<br>
+np.zeros((행수,열수))<br>
+</p>
+<p><strong><p style="fort-size:20px">배열 항목 지정 방법</strong>
+<li>1차원 : 배열명[위치]</li>
+<li>2차원 : 배열명[행위치,열위치], 배열명[행위치][열위치]</li>
+<li>행위치에 "시작 : 불포함 끝" 사용가능</li>
+<li>행위치에 "시작 : 불포함 끝 : 증감" 사용가능</li>
+<li>(리스트 뒤부터 시작) -값 사용가능</li>
+<li>위치지정을 배열로 사용가능</li>
+ex) 배열명[np.array([2,3,4])]<br>
+내가 원하는 위치를 배열로 뽑을수있음
+<li>boolean 값으로 항목선택가능</li>
+해당위치가 Ture면 값 선택가능
+</p>
+<body>
+</html>
