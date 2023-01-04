@@ -14,6 +14,7 @@
     <li><a href="UseNumpy.html">numpy</a></li>
     <li><a href="C.html">C언어</a></li>
     <li><a href="Thread.html">쓰레드</a></li>
+    <li><a href="java.html">java</a></li>
   </ul>
   tuple   순서사용        값변경가능      값중복가능<br>
   list    순서사용        값변경불가능    값중복가능<br>
@@ -43,5 +44,30 @@
             (이미지 , 글 , (글넣을 x축,y축),font, 글자크기 , 글자색깔 ,글자굵기, ?)<br>
   cv.circle(img2, (255, 255), 128, (0, 128, 128), 2) > 원그리기<br>
           (이미지 , 원중심 , 크기 , 색깔 , 선굵기)
+  (row(세로)행 , column(가로)열 , 색깔) > 첫번째칸(0,0,0) blue<br>
+  cv.imread('이미지 이름', 0) > 이라면 그레이영상<br>
+  이름.shape > 행rowsize,열column,칼라의개수channels<br>
+  cv.waitkey(키보드입력 기다리는시간) > 0이면 무한<br>
+  cv.destroyAllWindow() > 모든윈도우를 종료<br>
+  img.item(row,colume,channel)<br>
+  img.itemset((127,134,2),255) > 원하는 위치의 칼라의화소값 변경<br>
+  roi(region of interest) = 내가 사용하고싶은 영역<br>
+  split > 따로따로 저장<br>
+  merge()(이미지1,이미지2,이미지3)) > 각각의크기가같은 이미지를 합하기<br>
+  cv.add > 255가 넘어가면 그냥 255로 저장<br>
+  cv.addWeighted(img1, 0.5 , img2, 0.5,0) > 각각의 색상을 가중치를 주어 합함<br>
+  transformation > 이미지사이즈확대 및 축소,이미지움직임,이미지회전<br>
+  affine transform > 이미지를 3차원공간으로 찌그러트리기 <br>
+  perspective transformation > 3차원공간으로 회전 <br>
+  이미지resize x축,y축 1.5배 | interpolation 거칠게확대된형태말고 부드럽게 나오게하기<br>
+  resizeImg1 = cv.resize(img, None, fx=1.5, fy=1.5, interpolation=cv.INTER_CUBIC)<br>
+  M = np.float32([[바꾸면,다른효과,20],[바꾸면,다른효과,100]])<br>
+  M = np.float32([[1,0,x축],[0,1,y축]])<br>
+  warpImg = cv.warpAffine(img,M,(cols,rows))<br>
+                          (이미지,위치,(본래x,y축))<br>
+  M =cv.getRotationMatrix2D(((cols-1)/2.0), (rows-1)/2.0), 90, 1)<br>
+                            회전의 중심, 각도, 스케일(영상의 줄어듬,늘어남)<br>
+  pts1 = np.float32([[0,0], [0,255], [255,0]]) 원래영상에서 꼭짓점들의 위치<br>
+  pts2 = np.float32([[100,100], [0,255], [255,0]]) 꼭짓점들의 위치를 변경<br>
 <body>
 </html>

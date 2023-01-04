@@ -14,6 +14,7 @@
     <li><a href="UseNumpy.html">numpy</a></li>
     <li><a href="C.html">C언어</a></li>
     <li><a href="Thread.html">쓰레드</a></li>
+    <li><a href="java.html">java</a></li>
   </ul>
   영상의 크기 : 가로 화소 수 X 세로 화소 수<br>
   화소위치 : (row(세로)행 , column(가로)열) 첫번째칸(0,0)<br>
@@ -27,6 +28,25 @@
     전체배열의 이름 <br>
     배열의 각각의 항 = cell,element<br>
     배열 크기 : 가로cell x 세로 가로cell<br>
-    cell위치 : (행 index , 열 index)</p>
+    cell위치 : (행 index , 열 index)<br>
+    (row(세로)행 , column(가로)열 , 색깔) > 첫번째칸(0,0,0) blue<br>
+    cv.imread('이미지 이름', 0) > 이라면 그레이영상<br>
+    이름.shape > 행rowsize,열column,칼라의개수channels<br>
+    cv.waitkey(키보드입력 기다리는시간) > 0이면 무한<br>
+    cv.destroyAllWindow() > 모든윈도우를 종료<br>
+    img.item(row,colume,channel)<br>
+    img.itemset((127,134,2),255) > 원하는 위치의 칼라의화소값 변경<br>
+    roi(region of interest) = 내가 사용하고싶은 영역<br>
+    split > 따로따로 저장<br>
+    merge()(이미지1,이미지2,이미지3)) > 각각의크기가같은 이미지를 합하기<br>
+    cv.add > 255가 넘어가면 그냥 255로 저장<br>
+    cv.addWeighted(img1, 0.5 , img2, 0.5,0) > 각각의 색상을 가중치를 주어 합함<br>
+    transformation > 이미지사이즈확대 및 축소,이미지움직임,이미지회전<br>
+    affine transform > 이미지를 3차원공간으로 찌그러트리기 <br>
+    perspective transformation > 3차원공간으로 회전 <br>
+    이미지resize x축,y축 1.5배 | interpolation 거칠게확대된형태말고 부드럽게 나오게하기<br>
+    resizeImg1 = cv.resize(img, None, fx=1.5, fy=1.5, interpolation=cv.INTER_CUBIC)<br>
+    M = np.float32([[바꾸면,다른효과,20],[바꾸면,다른효과,100]])<br>
+    M = np.float32([[1,0,x축],[0,1,y축]])<br>
 <body>
 </html>
