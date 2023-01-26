@@ -29,6 +29,37 @@
   \n - unix한정 , \r - max한정 , /r/n 이란 것도 있음<br>
   System.getProperty("line.separator")<br>
   System.lineSeparator() <br>
+  
+  if문<br>
+  int time = 20;<br>
+  if (time < 18) {<br>
+    System.out.println("Good day.");<br>
+  } else {<br>
+    System.out.println("Good evening.");<br>
+  }<br>
+
+  변형 if문<br>
+  int time = 20;<br>
+  String result = (time < 18) ? "Good day." : "Good evening.";<br>
+  System.out.println(result);<br>
+ --------------------------------------------------------------------<br>
+  array_ex > String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+
+  array<br>
+  String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+  for (int i = 0; i < cars.length; i++) {<br>
+    System.out.println(cars[i]);<br>
+  }<br>
+
+  for-each loop<br>
+  String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};<br>
+  for (String i : cars) {<br>
+    System.out.println(i);<br>
+  }<br>
+
+  2차원 배열<br>
+  int[][] myNumbers = { {1, 2, 3, 4}, {5, 6, 7} };<br>
+  System.out.println(myNumbers[1][2]); // Outputs 7<br>
 
   <img src="bbb.png" width="40%">
 <body>
